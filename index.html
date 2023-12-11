@@ -12,25 +12,26 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- custom css -->
-        <link rel = "stylesheet" href = "assets/css/style.css" />
-        <link rel = "stylesheet" href = "assets/css/utilities.css" />
+        <link rel = "stylesheet" href = "assets/css/newstyle.css" />
         <!-- normalize.css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         
         <div class="main">
-            <!-- header -->
+            
+
+
             <header class = "header">
                 <nav class = "navbar">
                     <div class="container">
-                        <div class="navbar_content d_flex justify_content_between align_items_center">
+                        <div class="navbar_content">
                             <div class = "brand_and_toggler">
-                                <a href = "#" class = "navbar_brand justify_content_between align_items_center">
-                                    <span class="brand_shape d_inline_block text_white">M</span>
-                                    <span class="brand_text">MedStore</span>
+                                <a href = "#" class = "brand">
+                                    <p class="brand_logo">M</p>
+                                    <p class="brand_text">MedStore</p>
                                 </a>
-                                <button type = "button" class = "d_none navbar_show_btn">
+                                <button type = "button" class = "navbar_show_btn">
                                     <i class = "fas fa-bars"></i>
                                 </button>
                             </div>
@@ -40,18 +41,18 @@
                                     <i class = "fas fa-times"></i>
                                 </button>
 
-                                <ul class = "navbar_nav d_flex align_items_center">
+                                <ul class = "nav">
                                     <li class = "nav_item">
-                                        <a href = "#" class = "nav_link text_white nav_active text_nowrap">Home</a>
+                                        <a href = "index.html" class = "nav_link">Home</a>
                                     </li>
                                     <li class = "nav_item">
-                                        <a href = "#" class = "nav_link text_white text_nowrap">Catalog</a>
+                                        <a href = "#" class = "nav_link">Catalog</a>
                                     </li>
                                     <li class = "nav_item">
-                                        <a href = "#" class = "nav_link text_white text_nowrap">Consultation</a>
+                                        <a href = "#" class = "nav_link">Consultation</a>
                                     </li>
                                     <li class = "nav_item">
-                                        <a href = "#" class = "nav_link text_white text_nowrap">Log in</a>
+                                        <a href = "#" class = "nav_link">Login</a>
                                     </li>
                                 </ul>
                             </div>
@@ -59,25 +60,25 @@
                     </div>
                 </nav>
 
-                <div class="banner">
-                    <div class="container">
+                <div>
+                    <div>
                         <div class="banner_content">
                             <div class="banner_left">
                                 <div class="content_wrapper">
                                     <h1 class="banner_title">Online pharmacy <br> for you</h1>
-                                    <p class="text text_white">MedStore provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
-                                    <a href = "#" class="btn btn_secondary">Consult today</a>
+                                    <p class="text">MedStore provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
+                                    <a href = "#" class="btn">Consult today</a>
                                 </div>
                             </div>
 
-                            <div class = "banner_right d_flex align_items_center justify_content_end">
+                            <div class = "banner_right">
                                 <img src = "assets/images/main.png" alt = "">
                             </div>
                         </div>
                     </div>
                 </div>
             </header>
-            <!-- end of header -->
+
 
             <main>
                 <section class = "sc_services">
@@ -86,14 +87,15 @@
                     </div>
                     <div class="container">
                         <div class = "services_content">
-                            <div class="title_box text_center">
+                            <div class="title_box">
                                 <div class = "content_wrapper">
                                     <h3 class = "title_box_name">Our services</h3>
-                                    <div class = "title_separator mx_auto"></div>
-                                    <p class = "text title_box_text">We provide you the best choices for you. Adjust it to your health needs and you can consult with us which type of medicine is suitable for your health</p>
+                                    <div class = "title_separator"></div>
+                                    <p class = "text">We provide you the best choices for you. Adjust it to your health needs and you can consult with us which type of medicine is suitable for your health</p>
                                 </div>
                             </div>
 
+                            <div class="services_grid">
                                 <div class = "services_item">
                                     <div class = "item_icon">
                                         <img src = "assets/images/service-icon-2.png" alt = "service icon">
@@ -122,28 +124,27 @@
                                     <div class = "item_icon">
                                         <img src = "assets/images/service-icon-5.png" alt = "service icon">
                                     </div>
-                                    <h5 class = "item_title fw_7">Emergency care</h5>
+                                    <h5 class = "item_title">Emergency care</h5>
                                     <p class = "text">You can get 24/7 urgent care for yourself or your children and your lovely family.</p>
                                 </div>
-
+                            </div>
                         </div>
                     </div>
                 </section>
 
                 <section class = "sc_grid sc_grid_one">
                     <div class="container">
-                        <div class = "grid_content d_grid align_items_center">
+                        <div class = "grid_content">
                             <div class = "grid_img">
                                 <img src = "assets/images/health-care-img.png" alt = "">
                             </div>
                             <div class = "grid_text">
-                                <div class = "content_wrapper text_start">
+                                <div class = "content_wrapper">
                                     <div class = "title_box">
-                                        <h3 class = "title_box_name text_white">Leading suppliers of medical drugs</h3>
-                                        <div class = "title_separator mx_auto"></div>
+                                        <h3 class = "title_box_name">Leading suppliers of medical drugs</h3>
+                                        <div class = "title_separator"></div>
                                     </div>
-
-                                    <p class = "text title_box_text text_white">MedStore provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it's not just work. We take pride in the solutions we deliver</p>
+                                    <p class = "text title_box_text">MedStore provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it's not just work. We take pride in the solutions we deliver</p>
                                 </div>
                             </div>
                         </div>
@@ -152,156 +153,18 @@
 
                 <section class = "sc_grid sc_grid_two">
                     <div class = "container">
-                        <div class = "grid_content d_grid align_items_center">
+                        <div class = "grid_content">
                             <div class = "grid_img">
                                 <img src = "assets/images/download-image.png" alt = "">
                             </div>
                             <div class = "grid_text">
-                                <div class = "content_wrapper text_start">
+                                <div class = "content_wrapper">
                                     <div class = "title_box">
                                         <h3 class = "title_box_name">Our consultation</h3>
-                                        <div class = "title_separator mx_auto"></div>
+                                        <div class = "title_separator"></div>
                                     </div>
                                     <p class = "text title_box_text">Our consultation in the pharmacy is dedicated to optimizing processes, ensuring regulatory compliance, and enhancing overall efficiency in pharmaceutical operations.</p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- <section class = "sc_feedback">
-                    <div class="container">
-                        <div class = "feedback_content">
-                            <div class = "feedback_element">
-                                <img src = "assets/images/element-img-3.png">
-                            </div>
-                            <div class="feedback_element_2">
-                                <img src = "assets/images/element-img-5.png">
-                            </div>
-                            <div class = "title_box text_center">
-                                <div class = "content_wrapper">
-                                    <h3 class = "title_box_name text_white">What our customer are saying</h3>
-                                    <div class = "title_separator mx_auto"></div>
-                                </div>
-                            </div>
-
-                            <div class = "feedback_list feedback_slider owl_carousel owl_theme">
-                                <div class = "feedback_item d_grid">
-                                    <div class = "item_left justify_content_between align_items_center">
-                                        <div class = "item_img">
-                                            <img src = "assets/images/person-image.png" alt = "">
-                                        </div>
-                                        <div class = "item_info text_white">
-                                            <p class = "fw_7 name">Edward Newgate</p>
-                                            <span class = "designation fw_4">Founder Circle</span>
-                                        </div>
-                                    </div>
-                                    <div class = "item_right">
-                                        <p class = "text text_white">"Our dedicated patient engagement app and web portal allow you to access information instantaneoulsy (no tedeous form, long calls, or administrative hassle) and securely"</p>
-                                    </div>
-                                </div>
-
-                                <div class = "feedback_item d_grid">
-                                    <div class = "item_left justify_content_between align-items_center">
-                                        <div class = "item_img">
-                                            <img src = "assets/images/person-image.png" alt = "">
-                                        </div>
-                                        <div class = "item_info text_white">
-                                            <p class = "fw_7 name">Edward Newgate</p>
-                                            <span class = "designation fw_4">Founder Circle</span>
-                                        </div>
-                                    </div>
-                                    <div class = "item_right">
-                                        <p class = "text text_white">"Our dedicated patient engagement app and web portal allow you to access information instantaneoulsy (no tedeous form, long calls, or administrative hassle) and securely"</p>
-                                    </div>
-                                </div>
-
-                                <div class = "feedback_item d_grid">
-                                    <div class = "item_left justify_content_between align_items_center">
-                                        <div class = "item_img">
-                                            <img src = "assets/images/person-image.png" alt = "">
-                                        </div>
-                                        <div class = "item_info text_white">
-                                            <p class = "fw_7 name">Simon Paul</p>
-                                            <span class = "designation fw_4">Founder Circle</span>
-                                        </div>
-                                    </div>
-                                    <div class = "item_right">
-                                        <p class = "text text_white">"Our dedicated patient engagement app and web portal allow you to access information instantaneoulsy (no tedeous form, long calls, or administrative hassle) and securely"</p>
-                                    </div>
-                                </div>
-
-                                <div class = "feedback_item d_grid">
-                                    <div class = "item_left justify_content_between align_items_center">
-                                        <div class = "item_img">
-                                            <img src = "assets/images/person-image.png" alt = "">
-                                        </div>
-                                        <div class = "item_info text_white">
-                                            <p class = "fw_7 name">John Doe</p>
-                                            <span class = "designation fw_4">Founder Circle</span>
-                                        </div>
-                                    </div>
-                                    <div class = "item_right">
-                                        <p class = "text text_white">"Our dedicated patient engagement app and web portal allow you to access information instantaneoulsy (no tedeous form, long calls, or administrative hassle) and securely"</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
-
-                <section class = "sc_articles">
-                    <div class = "articles_shape">
-                        <img src = "assets/images/curve-shape-2.png" alt = "">
-                    </div>
-                    <div class = "container">
-                        <div class = "articles_content">
-                            <div class = "articles_element">
-                                <img src = "assets/images/element-img-2.png" alt = "">
-                            </div>
-                            <div class = "title_box text_center">
-                                <div class = "content_wrapper">
-                                    <h3 class = "title_box_name">Check out our latest article</h3>
-                                    <div class = "title_separator mx_auto"></div>
-                                </div>
-                            </div>
-                            
-                            <div class = "articles_list justify_content_between flex_wrap justify_content_center">
-                                <article class = "articles_item">
-                                    <div class = "item_img">
-                                        <img src = "assets/images/article-img-1.png">
-                                    </div>
-                                    <div class = "item_body">
-                                        <div class = "item_title">Disease detection, check up in the laboratory</div>
-                                        <p class = "text">In this case, the role of the health laboratory is very important to do a disease detection ...</p>
-                                        <a href = "#" class = "item_link text_blue d_flex align_items_baseline">
-                                        </a>
-                                    </div>
-                                </article>
-
-                                <article class = "articles_item">
-                                    <div class = "item_img">
-                                        <img src = "assets/images/article-img-2.png">
-                                    </div>
-                                    <div class = "item_body">
-                                        <div class = "item_title">Herbal medicines that are safe for consumption</div>
-                                        <p class = "text">Herbal medicine is very widely used at this time because of its very good for your health ...</p>
-                                        <a href = "#" class = "item_link text_blue d_flex align_items_baseline">
-                                        </a>
-                                    </div>
-                                </article>
-
-                                <article class = "articles_item">
-                                    <div class = "item_img">
-                                        <img src = "assets/images/article-img-3.png">
-                                    </div>
-                                    <div class = "item_body">
-                                        <div class = "item_title">Natural care for healthy facial skin</div>
-                                        <p class = "text">A healthy lifestyle should start from now and also for your skin health ...</p>
-                                        <a href = "#" class = "item_link text_blue d_flex align_items_baseline">
-                                        </a>
-                                    </div>
-                                </article>
                             </div>
                         </div>
                     </div>
@@ -311,13 +174,13 @@
             <footer class = "footer">
                 <div class = "container">
                     <div class = "footer_content">
-                        <div class = "footer_list d_grid text_white">
+                        <div class = "footer_list">
                             <div class = "footer_item">
-                                <a href = "#" class = "navbar_brand justify_content_between align_items_center">
-                                    <span class = "brand_shape d_inline_block text_white">M</span>
+                                <a href = "#" class = "brand">
+                                    <span class = "brand_logo">M</span>
                                     <span class = "brand_text">MedStore</span>
                                 </a>
-                                <p class = "text_white">MedStore provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
+                                <p>MedStore provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
                             </div>
 
                             <div class = "footer_item">

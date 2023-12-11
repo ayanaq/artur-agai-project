@@ -9,12 +9,12 @@
 
 
 /* text stylings and colors */
-.text{
+/* .text{
     color: #7d7987;
     mix-blend-mode: normal;
     font-weight: 300;
     font-style: normal;
-}
+} */
 
 
 
@@ -141,7 +141,7 @@
 }
 
 /* buttons */
-.btn{
+/* .btn{
     min-width: 200px;
     height: 56px;
     border-radius: 54px;
@@ -152,21 +152,21 @@
     font-size: 18px;
     color: white;
     transition: all 300ms ease-in-out;
-}
+} */
 
-.btn:hover{
+/* .btn:hover{
     color: white;
     background-color: #1472f4;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-}
-.btn_primary{
+} */
+/* .btn_primary{
     background-color: #458ff6;
-}
-.btn_primary_outline{
+} */
+/* .btn_primary_outline{
     border: 1.4px solid #458ff6;
     color: #458ff6;
-}
-.btn_secondary{
+} */
+/* .btn_secondary{
     background-color: white;
     color: #458ff6;
 }
@@ -177,7 +177,7 @@
 .btn_white_outline:hover{
     background-color: white;
     color: #458ff6;
-}
+} */
 
 /* title */
 .title_box .title_box_name{
