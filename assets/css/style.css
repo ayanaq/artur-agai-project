@@ -1,17 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
 
-:root{
-    --clr-blue: #458ff6;
-    --clr-black: #000;
-    --clr-white: #fff;
-    --clr-gray: #7d7987;
-    --clr-dark-blue: #233348;
-    --clr-dark-purple: #1f1534;
-    --font-family-mulish: 'Mulish', sans-serif;
-    --transition-default: all 300ms ease-in-out;
-}
-
 html{
     scroll-behavior: smooth;
     -moz-osx-font-smoothing: grayscale;
@@ -35,7 +24,7 @@ ul, ol{
 a{
     text-decoration: none;
     color: unset;
-    transition: var(--transition-default);
+    transition: all 300ms ease-in-out;
 }
 
 a:focus, a:hover{
@@ -61,7 +50,7 @@ img, object, embed, video{
 }
 
 body{
-    font-family: var(--font-family-mulish);
+    font-family: Mulish, sans-serif;
     line-height: 1.6;
     height: 100%;
     font-weight: 300;
@@ -99,10 +88,8 @@ button{
 }
 .navbar_content{
     height: 41px;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
 }
+
 .navbar_brand .brand_shape{
     width: 41px;
     height: 41px;
@@ -112,6 +99,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     font-weight: 700;
     margin-right: 12px;
     color: #458ff6;
@@ -154,7 +142,7 @@ button{
 .navbar_hide_btn{
     display: none;
     cursor: pointer;
-    transition: var(--transition-default);
+    transition: all 300ms ease-in-out;
 }
 .navbar_hide_btn:hover{
     opacity: 0.8;
@@ -223,7 +211,7 @@ button{
     padding: 46px 38px;
     margin: 18.5px;
     width: calc(33.3333% - 37px);
-    transition: var(--transition-default);
+    transition: all 300ms ease-in-out;
 }
 .services_item:hover{
     box-shadow:  rgba(0, 0, 0, 0.1) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
@@ -291,7 +279,7 @@ button{
     margin-left: 7px;
 }
 
-/* feedback section */
+/* feedback section
 .sc_feedback{
     padding: 125px 0 138px 0;
 }
@@ -393,12 +381,14 @@ button{
 }
 .feedback_list .owl_nav .disabled{
     opacity: 0.3;
-}
+} */
 
 /* articles */
 .sc_articles{
     position: relative;
     padding: 108px 0 64.5px 0;
+    display: grid;
+
 }
 .articles_item{
     box-shadow: 10px 40px 50px 0px #e5e9f666;
@@ -421,7 +411,7 @@ button{
     width: calc(33.3333% - 34px);
     overflow: hidden;
     margin: 0 17px;
-    transition: var(--transition-default);
+    transition: all 300ms ease-in-out;
 }
 .articles_item:hover{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -495,13 +485,16 @@ button{
     column-gap: 80px;
     row-gap: 40px;
 }
+
 .footer_item:nth-child(1){
     padding-right: 100px;
 }
+
 .footer_item:nth-child(1) p{
     font-weight: 300;
     font-size: 18px;
 }
+
 .footer_item:nth-child(1) .copyright_text{
     margin-top: 31px;
     line-height: 1.55;
@@ -569,7 +562,7 @@ button{
         background-color: white;
         padding: 48px 32px 24px;
         transform: translateX(100%);
-        transition: var(--transition-default);
+        transition: all 300ms ease-in-out;
     }
 
     .navbar_box_show{
@@ -591,7 +584,7 @@ button{
         height: 1px;
         width: 0;
         background-color: #458ff6;
-        transition: var(--transition-default);
+        transition: all 300ms ease-in-out;
     }
     .navbar_box .nav_link:hover{
         color: #458ff6;
