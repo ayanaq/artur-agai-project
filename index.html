@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>MedStore</title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- font awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -55,6 +54,26 @@
                                         <a href = "#" class = "nav_link">Login</a>
                                     </li>
                                 </ul>
+                                <button id="myBtn" class="nav_burger">
+                                    <img src="./assets/images/menu-vertical-svgrepo-com.svg" alt="">
+                                </button>
+
+                                <!-- The Modal -->
+                                <div id="myModal" class="modal">
+                                
+                                  <!-- Modal content -->
+                                  <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <div class="linksinmodal">
+                                            <a href = "index.html"  class="burgerlink">Home</a>
+                                            <a href = "#" class="burgerlink">Catalog</a>
+                                            <a href = "#" class="burgerlink">Consultation</a>
+                                            <a href = "#" class="burgerlink">Login</a>
+                                    </div>
+
+                                  </div>
+                              
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -136,16 +155,9 @@
                     <div class="container">
                         <div class = "grid_content">
                             <div class = "grid_img">
-                                <img src = "assets/images/health-care-img.png" alt = "">
-                            </div>
-                            <div class = "grid_text">
-                                <div class = "content_wrapper">
-                                    <div class = "title_box">
-                                        <h3 class = "title_box_name">Leading suppliers of medical drugs</h3>
-                                        <div class = "title_separator"></div>
-                                    </div>
+                                <img src = "assets/images/health-care-img.png" alt = "" >
+                                <h2 class = "title_box_name">Leading suppliers of medical drugs</h2>
                                     <p class = "text title_box_text">MedStore provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it's not just work. We take pride in the solutions we deliver</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -153,18 +165,14 @@
 
                 <section class = "sc_grid sc_grid_two">
                     <div class = "container">
-                        <div class = "grid_content">
-                            <div class = "grid_img">
+                        <div class = "flex_content">
                                 <img src = "assets/images/download-image.png" alt = "">
-                            </div>
-                            <div class = "grid_text">
                                 <div class = "content_wrapper">
                                     <div class = "title_box">
                                         <h3 class = "title_box_name">Our consultation</h3>
                                         <div class = "title_separator"></div>
                                     </div>
                                     <p class = "text title_box_text">Our consultation in the pharmacy is dedicated to optimizing processes, ensuring regulatory compliance, and enhancing overall efficiency in pharmaceutical operations.</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -183,7 +191,7 @@
                                 <p>MedStore provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
                             </div>
 
-                            <div class = "footer_item">
+                            <div class = "footer_item footer_company">
                                 <h3 class = "footer_item_title">Company</h3>
                                 <ul class = "footer_links">
                                     <li><a href = "index.html">About</a></li>

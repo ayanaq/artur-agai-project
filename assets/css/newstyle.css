@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
 
-/* some resets & configuration */
 *,
 *::before,
 *::after{
@@ -302,21 +301,49 @@ button{
 
 .services_grid{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2,1fr);
+
     justify-self: center;
     align-self: center;
 }
 
 .services_grid .services_item{
+    width: 25vmax;
     place-self: center;
 }
 
+.grid_img{
+    display: grid;
+    column-gap: 78px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
 
-
-.grid_content .content_wrapper{
-    max-width: 360px;
-    text-align: left;
+    align-items: center;
 }
+.grid_img img{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.grid_img .title_box_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    line-height: 1.166;
+
+}
+
+.grid_img .title_box_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
 .grid_content{
     grid-template-columns: repeat(2, 1fr);
     column-gap: 137px;
@@ -329,7 +356,11 @@ button{
 .grid_content .text{
     line-height: 1.667;
 }
-
+.flex_content{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
 
 .sc_grid_one{
     padding: 115.5px 0 114.5px 0;
@@ -405,4 +436,145 @@ button{
 
 .footer_links li{
     margin-bottom: 10px;
+}
+.nav_burger{
+    display: none;
+    position: absolute;
+
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  color: #000;
+}
+
+/* The Close Button */
+.close {
+  color: #121212;
+  float: right;
+  top: 0;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+.myBtn img{
+    width: 10vmax;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.burgerlink{
+    color: #000!important;
+}
+.burgerlink:hover{
+    color: black !important;
+}
+.linksinmodal{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width:768px) {
+    .banner_content{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .banner_title{
+        text-align: center;
+    }
+    .content_wrapper{
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .grid_img{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 70vmax;
+    }
+    .grid_img img{
+        width: 50vmax;
+    }
+    .flex_content{
+        flex-direction:column ;
+        justify-content: space-between;
+        height: 60vmax;
+    }
+    .flex_content img{
+        width: 50vmax;
+    }
+    .services_grid .services_item{
+        width: 30vmax;
+    }
+}
+@media screen and (max-width:515px) {
+    .services_grid{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .services_grid .services_item{
+        width: 70%;
+    }
+    .footer_list{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .footer_item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 !important;
+    }
+    .modal-content{
+        width: 50%;
+    }
+    
+}
+@media screen and (max-width:626px) {
+    .nav{
+        display: none;
+    }
+    .nav_burger{
+        display: block;
+        right: 0;
+    }
+    .navbar_content{
+        align-items: normal;
+    }
+    .navbar .container {
+        margin: 0;
+    }
+    .footer_company{
+        display: none;
+    }
+    
 }
