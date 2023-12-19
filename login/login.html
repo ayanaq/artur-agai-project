@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="first_box">
+            <h1 id="title">Sign Up</h1>
+            <form id="formAuth">
+                <div class="input_group">
+                    <div class="input_field" >
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input id="usernameField" type="text" placeholder="Username">
+                    </div>
+
+                    <div class="input_field">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <input id="emailField" type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input_field">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input id="passwordField" type="password" placeholder="Password">
+                    </div>
+                    <p>Forgot password? <a href="#">Click here</a></p>
+                </div>
+                <div class="btn_field">
+                    <button type="button" id="signupBtn">Sign Up</button>
+                    <button type="button" id="signinBtn" class="swipe">Sign In</button>
+                </div>
+                <div class="button_field">
+                    <button type="submit" id="sendBtn" class="send_btn">Send</button>
+                </div>
+            </form>
+        </div> 
+
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>
