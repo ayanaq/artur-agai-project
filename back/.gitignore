@@ -1,0 +1,10 @@
+vot_takie_pirogi
+../templates/
+venv/
+__pycache__/
+.idea
+db.sqlite3
+.env
+.DS_Store
+audio/
+media/
