@@ -7,6 +7,16 @@
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+    color: unset;
+    transition: all 300ms ease-in-out;
+}
+
+a:focus, a:hover{
+    color: unset;
+}
+
 ul, ol{
     list-style-type: none;
 }
