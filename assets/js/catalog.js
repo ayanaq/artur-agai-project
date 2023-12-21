@@ -66,8 +66,25 @@ let iconCart = document.querySelector('.icon_cart');
 let iconCartSpan = document.querySelector('.icon_cart span');
 let body = document.querySelector('body');
 let closeCart = document.querySelector('.closebtnhum');
+let checkOut = document.querySelector('.checkOut')
+let burgerbtn = document.querySelector('.navbar_show_btn')
+let burgermenu = document.querySelector('.burgerMenu123')
+let closeburg=document.querySelector('.closeBurger')
 let products = [];
 let cart = [];
+
+checkOut.addEventListener("click",()=>{
+    body.classList.toggle('showCart');
+    console.log("fff");
+})
+
+burgerbtn.addEventListener('click', () => {
+    burgermenu.classList.toggle('showNav');
+    console.log("fnwj")
+})
+closeburg.addEventListener("click",()=>{
+    burgermenu.classList.remove('showNav')
+})
 
 
 iconCart.addEventListener('click', () => {
@@ -103,8 +120,8 @@ closeCart.addEventListener('click', () => {
     listProductHTML.addEventListener('click', (event) => {
         let positionClick = event.target;
         if(positionClick.classList.contains('addCart')){
-            let id_product = positionClick.parentElement.dataset.id;
-            addToCart(id_product);
+            let product_id = positionClick.parentElement.dataset.id;
+            addToCart(product_id);
         }
     })
 const addToCart = (product_id) => {
@@ -138,8 +155,8 @@ const addCartToHTML = () => {
             newItem.classList.add('item');
             newItem.dataset.id = item.product_id;
 
-            let positionProduct = products.findIndex((value) => value.id == item.product_id);
-            let info = products[positionProduct];
+            let positionProduct = listProduct.findIndex((value) => value.id == item.product_id);
+            let info = listProduct[positionProduct];
             listCartHTML.appendChild(newItem);
             newItem.innerHTML = `
             <div class="image">
@@ -155,6 +172,7 @@ const addCartToHTML = () => {
                     <span class="plus">></span>
                 </div>
             `;
+        listCartHTML.appendChild(newItem);
         })
     }
     iconCartSpan.innerText = totalQuantity;
@@ -196,7 +214,7 @@ const changeQuantityCart = (product_id, type) => {
 
 const initApp = () => {
     // get data product
-    fetch('catalog.json')
+    fetch('./assets/js/catalog.json')
     .then(response => response.json())
     .then(data => {
         products = data;
