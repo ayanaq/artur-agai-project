@@ -9,16 +9,16 @@ let formAuth = document.getElementById("formAuth")
 
 
 signinBtn.onclick = function(){
-    usernameField.style.maxHeight = "0";
+    emailField.style.maxHeight = "0";
     title.innerHTML = "Sign In";
     signupBtn.classList.add("swipe");
     signinBtn.classList.remove("swipe");
-    console.log('ajlwf')
+    console.log('')
 
 }
 
 signupBtn.onclick = function(){
-    usernameField.style.maxHeight = "60px";
+    emailField.style.maxHeight = "60px";
     title.innerHTML = "Sign Up";
     signupBtn.classList.remove("swipe");
     signinBtn.classList.add("swipe");
@@ -32,7 +32,7 @@ formAuth.addEventListener('submit', (event) => {
     let password = passwordField.value;
     
     if (signupBtn.classList.contains('swipe')) {
-        signIn();
+        signIn(username, email, password);
     }
 })
 
@@ -57,3 +57,23 @@ async function signIn(username, password) {
         alert("Ошибка HTTP: " + response.status)
     }
 }
+
+let closeCart = document.querySelector('.closebtnhum');
+let burgerbtn = document.querySelector('.navbar_show_btn');
+let burgermenu = document.querySelector('.burgerMenu123');
+let closeburg=document.querySelector('.closeBurger');
+
+burgerbtn.addEventListener('click', () => {
+  burgermenu.classList.toggle('showNav');
+  console.log("fnwj")
+})
+closeburg.addEventListener("click",()=>{
+  burgermenu.classList.remove('showNav')
+})
+
+closeCart.addEventListener('click', () => {
+    body.classList.toggle('showCart');
+
+    console.log("fnwj")
+
+})
