@@ -64,9 +64,9 @@ closeburg.addEventListener("click",()=>{
   burgermenu.classList.remove('showNav')
 })
 
-closeCart.addEventListener('click', () => {
-  body.classList.toggle('showCart');
+// closeCart.addEventListener('click', () => {
+//   body.classList.toggle('showCart');
 
-  console.log("fnwj")
+//   console.log("fnwj")
 
-})
+// })
