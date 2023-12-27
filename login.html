@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Login</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+</head>
+<body>
+    <header class = "header">
+        <nav class = "navbar">
+            <div class="container_catalog">
+                <div class="navbar_content">
+                    <div class = "brand_and_toggler">
+                        <a href = "index.html" class = "brand">
+                            <p class="brand_logo">M</p>
+                            <p class="brand_text">MedStore</p>
+                        </a>
+                        <div onclick="toggleNav()" class = "navbar_show_btn">
+                            <svg class="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+                        </div>
+                    </div>
+                    
+                    <div class = "navbar_box">
+                        <button type = "button" class = "navbar_hide_btn">
+                            <i class = "fas fa-times"></i>
+                        </button>
+
+                        <ul class = "nav">
+                            <li class = "nav_item">
+                                <a href = "index.html" class = "nav_link">Home</a>
+                            </li>
+                            <li class = "nav_item">
+                                <a href = "catalog.html" class = "nav_link">Catalog</a>
+                            </li>
+                            <li class = "nav_item">
+                                <a href = "bot2.html" class = "nav_link">Consultation</a>
+                            </li>
+                            <li class = "nav_item">
+                                <a href = "login.html" class = "nav_link">Login</a>
+                            </li>
+                        </ul>
+                        <button id="myBtn" class="nav_burger">
+                            <img src="./assets/images/menu-vertical-svgrepo-com.svg" alt="">
+                        </button>
+
+                        <!-- The Modal aaaaaa -->
+                        <div id="myModal" class="modal">
+                        
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="linksinmodal">
+                                    <a href = "index.html"  class="burgerlink">Home</a>
+                                    <a href = "catalog.html" class="burgerlink">Catalog</a>
+                                    <a href = "bot2.html" class="burgerlink">Consultation</a>
+                                    <a href = "login.html" class="burgerlink">Login</a>
+                            </div>
+
+                          </div>
+                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+
+    </header>
+    <div class="burgerMenu123 ">
+
+
+        <div class="burgerMenu">
+            <div class="burgerMenuNav" >
+
+        <a href = "index.html">Home</a>
+        <a href = "catalog.html">Catalog</a>
+        <a href = "bot2.html">Consultation</a>
+        <a href = "login.html">Login</a>
+        <button id="myBtn" class="nav_burger">
+          <img src="./assets/images/menu-vertical-svgrepo-com.svg" alt="">
+        </button>
+        <span onclick="toggleNav()" class="closeBurger">&times;</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="first_box">
+                <h1 id="title">Sign Up</h1>
+                <form>
+                    <div class="input_group">
+                        <div class="input_field" id="usernameField">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="text" placeholder="Username">
+                        </div>
+    
+                        <div class="input_field" id="emailField">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <input type="email" placeholder="Email">
+                        </div>
+    
+                        <div class="input_field">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <p>Forgot password? <a href="#">Click here</a></p>
+                    </div>
+                    <div class="button_field">
+                        <button type="submit" id="sendBtn" class="send_btn">Send</button>
+                    </div>
+                    <div class="btn_field">
+                        <button type="button" id="signupBtn">Sign Up</button>
+                        <button type="button" id="signinBtn" class="swipe">Sign In</button>
+                    </div>
+                    
+                </form>
+            </div> 
+        </div> 
+    </div>
+   
+
+    <script src="assets/js/login.js"></script>
+</body>
+</html>

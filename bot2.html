@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultation</title>
+    <link rel="stylesheet" href="assets/css/bot2.css" />
+  </head>
+  <body>
+
+
+    <header class = "header">
+        <nav class = "navbar">
+            <div class="container_catalog">
+                <div class="navbar_content">
+                    <div class = "brand_and_toggler">
+                        <a href = "index.html" class = "brand">
+                            <p class="brand_logo">M</p>
+                            <p class="brand_text">MedStore</p>
+                        </a>
+                        <div onclick="" class = "navbar_show_btn">
+                            <svg class="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+                        </div>
+                    </div>
+                    
+                    <div class = "navbar_box">
+                        <button type = "button" class = "navbar_hide_btn">
+                            <i class = "fas fa-times"></i>
+                        </button>
+
+                        <ul class = "nav">
+                            <li class = "nav_item">
+                                <a href = "index.html" class = "nav_link">Home</a>
+                            </li>
+                            <li class = "nav_item">
+                                <a href = "catalog.html" class = "nav_link">Catalog</a>
+                            </li>
+                            <li class = "nav_item">
+                                <a href = "bot2.html" class = "nav_link">Consultation</a>
+                            </li>
+                            <li class = "nav_item">
+                                <a href = "login.html" class = "nav_link">Login</a>
+                            </li>
+                        </ul>
+                        <button id="myBtn" class="nav_burger">
+                            <img src="./assets/images/menu-vertical-svgrepo-com.svg" alt="">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                        
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="linksinmodal">
+                                    <a href = "index.html"  class="burgerlink">Home</a>
+                                    <a href = "catalog.html" class="burgerlink">Catalog</a>
+                                    <a href = "bot2.html" class="burgerlink">Consultation</a>
+                                    <a href = "login.html" class="burgerlink">Login</a>
+                            </div>
+
+                          </div>
+                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+
+    </header>
+
+    <div class="burgerMenu123 ">
+
+
+      <div class="burgerMenu">
+          <div class="burgerMenuNav" >
+
+      <a href = "index.html">Home</a>
+      <a href = "catalog.html">Catalog</a>
+      <a href = "bot2.html">Consultation</a>
+      <a href = "login.html">Login</a>
+      <button id="myBtn" class="nav_burger">
+        <img src="./assets/images/menu-vertical-svgrepo-com.svg" alt="">
+      </button>
+      <span class="closeBurger">&times;</span>
+
+  </div>
+
+      </div>
+
+  </div>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="chat-header">
+        <div class="logo">
+          <img src="assets/images/chatbot.png" alt="" />
+        </div>
+        <div class="title">Consultation</div>
+      </div>
+      <div class="chat-body"></div>
+      <div class="chat-input">
+        <div class="input-sec">
+          <input type="text" id="txtInput" placeholder="Type here" autofocus />
+        </div>
+        <div class="send">
+          <img src="assets/images/send.svg" alt="send" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="assets/js/bot1.js"></script>
+    <script src="assets/js/bot2.js" ></script>
+  </body>
+</html>
