@@ -199,26 +199,23 @@ ul, ol{
 /* 
 my code */
 
-
+/* .wrapper{
+    display: flex;
+    justify-content: center;
+} */
 
 .container{
     width: 100%;
-    height: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
     background-color: #458ff6;
-    margin-top: 25%;
-    margin-left: 50%;
-    /* flex-direction: column;
     align-items: center;
-    justify-content: start; */
-    /* gap: 50px; */
 
 } 
 
 .first_box{
-     width: 25%; 
-    /* max-width: 350px;  */
-    transform: translate(-50%, -50%);
-    background: #fff ;
+    background: #fff ;  
     padding: 50px 60px 70px;
     text-align: center;
     border-radius: 15px;
@@ -227,20 +224,9 @@ my code */
     font-size: 30px;
     margin-bottom: 60px;
     color: navy;
-    position: relative;
+    /* position: relative; */
 }
 
-.first_box h1::after{
-    content: '';
-    width: 30px;
-    height: 4px;
-    border-radius: 3px;
-    background: rgb(255, 255, 255);
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
 .input_field{
     background: #e4e4e4;;
@@ -250,7 +236,7 @@ my code */
     align-items: center;
     max-height: 65px;
     transition: max-height 0.5s;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 input{
@@ -281,7 +267,6 @@ form p a{
 }
 
 .btn_field button{
-    /* flex-basis: 45%; */
     width: 45%;
     background: navy;
     color: #fff;
@@ -301,15 +286,10 @@ form p a{
 
 .button_field{
     width: 100%;
-    /* display: flex; */
     justify-content: center;
-    /* flex-basis: 50%; */
 }
 
 .button_field .send_btn{
-    /* flex-basis: 20%; */ 
-    /* margin-bottom: 15px; */
-   
     background-color: navy;
     color: #fff;
     height: 35px;
@@ -354,7 +334,7 @@ form p a{
 
  @media (max-width: 626px){
     .container{
-        width: 70%;
+        width: 100%;
 
     }
     
@@ -364,10 +344,7 @@ form p a{
         margin-bottom: 20px;
     }
 
-    .first_box h1::after {
-        width: 15px;
-        bottom: -6px;
-    }
+   
 
     .input_field input {
         padding: 12px;
@@ -421,6 +398,6 @@ form p a{
     }
     .closeBurger{
         position: absolute;
-        margin-left: 20vmax;        
+        margin-left: 20vmax;
     }
 }

@@ -202,18 +202,16 @@ body.showCart .container{
 
 
 /* my code  */
-
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
 
 .container {
   --light-color: #fff;
   height: 80%;
   width: 60%;
   background: var(--light-color);
-  /* position: relative; */
-  /* margin-top: 1%; */
-  margin-left: 20%;
-  /* bottom: 50px;
-  right: 10px; */
   box-shadow: 0px 0px 15px 0px black;
 }
 .chat-header {
@@ -287,7 +285,7 @@ body.showCart .container{
 
 @media (max-width: 626px) {
   .container {
-    width: 70%;
+    width: 80%;
 
   }
 
@@ -308,11 +306,6 @@ body.showCart .container{
   .chat-body {
     height: 150px;
   }
-
-  /* #txtInput {
-    line-height: 18px;s/
-    font-size: 0.9rem;
-  } */
 
   .navbar_show_btn{
     display: flex;

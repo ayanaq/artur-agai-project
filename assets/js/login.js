@@ -59,21 +59,20 @@ async function signIn(username, password) {
 }
 
 let closeCart = document.querySelector('.closebtnhum');
-let burgerbtn = document.querySelector('.navbar_show_btn');
-let burgermenu = document.querySelector('.burgerMenu123');
-let closeburg=document.querySelector('.closeBurger');
-
-burgerbtn.addEventListener('click', () => {
-  burgermenu.classList.toggle('showNav');
-  console.log("fnwj")
-})
-closeburg.addEventListener("click",()=>{
-  burgermenu.classList.remove('showNav')
-})
-
 closeCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
-
     console.log("fnwj")
-
 })
+
+function toggleNav() {
+    var burgermenu = document.querySelector('.burgerMenu123');
+    burgermenu.classList.toggle('showNav');
+    console.log("fnwj");
+}
+
+var closeburg = document.querySelector('.closeBurger');
+closeburg.addEventListener("click", function() {
+    var burgermenu = document.querySelector('.burgerMenu123');
+    burgermenu.classList.remove('showNav');
+    console.log("fnwj");
+});
