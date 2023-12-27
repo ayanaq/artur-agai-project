@@ -3,11 +3,14 @@ from rest_framework.response import Response
 from .permissions import IsAdminOrReadOnly, CanModifyMedicine
 from .models import Medicine, Type_of_med
 from .serializers import MedicineSerializer, CategoriesSerializer
+<<<<<<< HEAD
 from django.core.files import File
 from django.core.files.temp import NamedTemporaryFile
 from bot.main import echo, bot, dp
 import requests
 import asyncio
+=======
+>>>>>>> origin/login
 
 
 class MedicineAPIViewSet(viewsets.ModelViewSet):
@@ -16,10 +19,13 @@ class MedicineAPIViewSet(viewsets.ModelViewSet):
     lookup_field = 'link'
     permission_classes = [IsAdminOrReadOnly, CanModifyMedicine]
 
+<<<<<<< HEAD
     async def send_telegram_message(self, user, obj):
         # Create a task and execute it asynchronously
         await echo(user, obj)
 
+=======
+>>>>>>> origin/login
     def update(self, request, *args, **kwargs):
         instance = self.get_object()
         amount_to_subtract = request.data.get('amount', 0)
@@ -27,6 +33,7 @@ class MedicineAPIViewSet(viewsets.ModelViewSet):
         if amount_to_subtract and instance.amount >= amount_to_subtract:
             instance.amount -= amount_to_subtract
             instance.save()
+<<<<<<< HEAD
 
             # Get user and object information
             user = request.user.username  # Adjust based on your user model
@@ -38,6 +45,12 @@ class MedicineAPIViewSet(viewsets.ModelViewSet):
             return Response({'message': f'Successfully purchased {amount_to_subtract} units.'})
         else:
             return Response({'error': 'Not enough stock available.'}, status=status.HTTP_400_BAD_REQUEST)
+=======
+            return Response({'message': f'Successfully purchased {amount_to_subtract} units.'})
+        else:
+            return Response({'error': 'Not enough stock available.'}, status=status.HTTP_400_BAD_REQUEST)
+
+>>>>>>> origin/login
     def create(self, request, *args, **kwargs):
         type_of_med_id = request.data.get('type_of_med_id')
 
@@ -50,6 +63,7 @@ class MedicineAPIViewSet(viewsets.ModelViewSet):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
 
+<<<<<<< HEAD
         # Check if the image field is a URL
         image_url = request.data.get('image')
         if image_url:
@@ -61,12 +75,25 @@ class MedicineAPIViewSet(viewsets.ModelViewSet):
             # Save the temporary file to the image field
             serializer.validated_data['image'] = File(img_temp)
 
+=======
+>>>>>>> origin/login
         # Adding type_of_med instance to the serializer data before saving
         serializer.validated_data['type_of_med'] = type_of_med
 
         self.perform_create(serializer)
         headers = self.get_success_headers(serializer.data)
         return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
+<<<<<<< HEAD
+=======
+
+    def get_permissions(self):
+        if self.action == 'partial_update':  # Для PATCH запроса
+            permission_classes = [CanModifyMedicine]
+        else:
+            permission_classes = self.permission_classes
+        return [permission() for permission in permission_classes]
+
+>>>>>>> origin/login
 class CategoriesAPIViewSet(viewsets.ModelViewSet):
     queryset = Type_of_med.objects.all()
     serializer_class = CategoriesSerializer
@@ -80,4 +107,8 @@ class CategoriesAPIViewSet(viewsets.ModelViewSet):
             serializer = MedicineSerializer(medicines, many=True)
             return Response({'medicines': serializer.data})
         else:
+<<<<<<< HEAD
             return Response({'error': 'No pk provided'})
+=======
+            return Response({'error': 'No pk provided'})
+>>>>>>> origin/login

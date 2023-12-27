@@ -33,7 +33,11 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+<<<<<<< HEAD
     'allauth.account.middleware.AccountMiddleware',
+=======
+    # 'allauth.account.middleware.AccountMiddleware',
+>>>>>>> origin/login
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -48,6 +52,15 @@ ROOT_URLCONF = 'back.urls'
 
 CORS_ALLOW_ALL_ORIGINS = True
 
+<<<<<<< HEAD
+=======
+CORS_ORIGIN_WHITELIST = [
+    # "https://85.209.9.201:2067"
+    "https://localhost:2067"
+]
+
+# settings.py
+>>>>>>> origin/login
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / "media"

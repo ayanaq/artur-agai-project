@@ -48,6 +48,7 @@ server {
     }
 }
 
+<<<<<<< HEAD
 server {
     listen 777;
     server_name 85.209.9.201;  # Замените на свой домен
@@ -63,3 +64,5 @@ server {
         proxy_redirect off;
     }
 }
+=======
+>>>>>>> origin/login
