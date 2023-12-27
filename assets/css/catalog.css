@@ -244,7 +244,7 @@ header .icon_cart span{
 
 .listProduct{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -379,7 +379,7 @@ body.showCart .container{
 
 @media screen and (max-width: 733px) {
     .listProduct{
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
     
 }
@@ -387,7 +387,7 @@ body.showCart .container{
 
 @media screen and (max-width: 626px) {
     .listProduct{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
     .navbar_show_btn{
         display: flex;
